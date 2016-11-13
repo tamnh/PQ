@@ -285,7 +285,7 @@ void BufferTreeNode::add(unsigned key, unsigned priority) {
             }
         }
         else {
-            buffer.insert(key, priority);
+            buffer[key] = priority;
         }
         if (isOpFull()) {
             propagateOp();
